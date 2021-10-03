@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="gzha644.css" />
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="gzha644.js"></script>
+</head>
+<body>
+    <div class="contents">
+        <img src="http://localhost:5000/api/GetLogo" class="logo">
+        <table class="buttonlist">
+            <tr>
+                <th>
+                    <button type="button" class="tittle_button" id="homebtn">
+                        <b>
+                            &#127968; Home
+                        </b>
+                    </button>
+                </th>
+                <th>
+                    <button type="button" class="tittle_button" id="staffbtn">
+                        <b>
+                            &#128240; Staff
+                        </b>
+                    </button>
+                </th>
+                <th>
+                    <button type="button" class="tittle_button" id="shopbtn">
+                        <b>
+                            &#128722; Institute Shop
+                        </b>
+                    </button>
+                </th>
+                <th>
+                    <button type="button" class="tittle_button" id="regbtn">
+                        <b>
+                            &#128105; User Registration
+                        </b>
+                    </button>
+                </th>
+                <th>
+                    <button type="button" class="tittle_button" id="guestbtn">
+                        <b>
+                            &#128214; Guest Book
+                        </b>
+                    </button>
+                </th>
+            </tr>
+        </table>
+        <dir class="loginarea">
+            <p>
+                UserName:
+                <span id="showusername">
+                    Please Login
+                </span>
+            </p>
+            <button id="smalllogin" type="button">Login</button>
+            <button id="smalllogout" type="button">logout</button>
+        </dir>
+    </div>
+
+    <div id="homepage" class="bigbox">
+        <h1 class="title">HOME</h1>
+        <div class="detailbox">
+            <img src="http://localhost:5000/api/GetLogo">
+            <p>Established in 1971, SIT has since become famous for its Zero Fees Scheme. The scheme, which is open to New Zealand citizens and permanent residents, sees students save thousands of dollars on the cost of their tertiary education. The Institute is also renowned for the quality of its facilities and equipment. On 1 April 2020, Southern Institute of Technology will be subsumed into New Zealand Institute of Skills & Technology alongside the 15 other Institutes of Technology and Polytechnics (ITPs).[2]
+
+                SIT offers over 200 programmes in a range of academic, technical and professional subjects at postgraduate, graduate, bachelor, diploma and certificate levels. SIT is a member of the International Association of Universities.</p>
+        </div>
+    </div>
+
+    <div id="staff" class="bigbox">
+        <h1 class="title">staff</h1>
+        <div class="detailbox">
+            <img src="http://localhost:5000/api/GetLogo">
+            <p>Established in 1971, SIT has since become famous for its Zero Fees Scheme. The scheme, which is open to New Zealand citizens and permanent residents, sees students save thousands of dollars on the cost of their tertiary education. The Institute is also renowned for the quality of its facilities and equipment. On 1 April 2020, Southern Institute of Technology will be subsumed into New Zealand Institute of Skills & Technology alongside the 15 other Institutes of Technology and Polytechnics (ITPs).[2]
+
+                SIT offers over 200 programmes in a range of academic, technical and professional subjects at postgraduate, graduate, bachelor, diploma and certificate levels. SIT is a member of the International Association of Universities.</p>
+        </div>
+    </div>
+
+    <div id="shop" class="bigbox">
+        <h1 class="title">shop</h1>
+        <div class="commentdetailbox">
+            <form action="" class="parent">
+                <input type="text" id="searchitem">
+                <input type="button" value="Search">
+            </form>
+            <div class="shoplist">
+
+            </div>
+        </div>
+    </div>
+
+    <div action="index.html" class="login-form", id="registration">
+        <h1>Registration</h1>
+
+        <div class="txtb">
+            <input type="text" placeholder="Username" id="signupusername">
+        </div>
+
+        <div class="txtb">
+            <input type="text" placeholder="Password" id="signuppassword">
+        </div>
+
+        <div class="txtb">
+            <input type="text" placeholder="Address" id="signupaddress">
+        </div>
+        
+        <input type="submit" class="logbtn" value="Sign Up" id="signupsub">
+
+        <div class="bottom-text">
+            Already have account? <a href="javascript:;" id="signinbtn">Login</a>
+        </div>
+    </div>
+
+    <div action="index.html" class="login-form" id="signin">
+        <h1>Login</h1>
+
+        <div class="txtb">
+            <input type="text" placeholder="Username" id="loginusername">
+        </div>
+
+        <div class="txtb">
+            <input type="password" placeholder="Password" id="loginpassword">
+        </div>
+        
+        <input type="submit" class="logbtn" value="Login" id="loginsub">
+
+        <div class="bottom-text">
+            Don't have account? <a href="javascript:;" id="regbtn-in_login">Sign Up</a>
+        </div>
+    </div>
+
+    <div id="guestbook" class="comment-bigbox">
+        <h1 class="title">Guest Book</h1>
+        <div class="commentdetailbox">
+            <div class="guestuser">
+                <input type="text" placeholder="Username" id="commentuser">
+            </div>
+            <div>
+                <textarea class="textarea" name="textarea_des" id="comment" placeholder="Please sign our guest book."></textarea>
+            </div><br>
+            <input type="submit" class="submitbtn" value="Submit" id="submitbtn"><br>
+        </div>
+
+        <div class="commentdetailbox">
+            <iframe src="http://localhost:5000/api/GetComments" class="commentslist" id="commentcontext"></iframe>
+        </div>
+    </div>
+</body>
+</html>

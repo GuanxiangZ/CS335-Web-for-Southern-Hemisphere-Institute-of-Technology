@@ -1,0 +1,12 @@
+﻿{
+
+  "Assignment2": {
+    "commandName": "Project",
+    "dotnetRunMessages": "true",
+    "launchBrowser": true,
+    "applicationUrl": "https://localhost:8080;http://localhost:8081",
+    "environmentVariables": {
+      "ASPNETCORE_ENVIRONMENT": "Development"
+    }
+  }
+}
